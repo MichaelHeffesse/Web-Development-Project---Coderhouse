@@ -1,2 +1,2 @@
-# Web-Development-Project---Coderhouse
-Web developed for a web development course from Coderhouse
+# Web Development - Project - Coderhouse
+Project developed for a web development course from Coderhouse
