@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap");
+body {
+  font-family: "Lora", serif;
+}
+
+.logo_page {
+  width: 11%;
+}
+
+.navbar-brand {
+  color: darkgray;
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=styles_css.css.map */
