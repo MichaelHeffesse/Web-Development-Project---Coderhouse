@@ -12,4 +12,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.header {
+  color: #0869bf;
+  font-size: 27px;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #0869bf;
+}
+
+
 /*# sourceMappingURL=styles_css.css.map */

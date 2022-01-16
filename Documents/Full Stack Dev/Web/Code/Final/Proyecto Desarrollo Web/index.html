@@ -12,7 +12,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="./scss/styles_css.css"/>
-
+        <meta name="description" content="Bienvenidos a Digitalhikeup | Te ayudamos a escalar tus finanzas mediante
+        el uso de machine learning">
+        <meta name="keywords" content="Digital, Data, Algoritmos, Machine Learning, Finanzas, Pymes, Finanzas personales">
     </head>
     <body>
         <!-- Navigation-->
@@ -23,6 +25,7 @@
                 <a id="btn_success" class="btn btn-success" href="#signup">Sumate!</a>
             </div>
         </nav>
+
         <!-- Masthead-->
         <header class="masthead">
             <div class="container position-relative">
@@ -33,21 +36,16 @@
                             <h1 class="mb-5">Algoritmea tus negocios y finanzas personales!</h1>
                             <!-- Signup form-->
                             <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!--<form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN"> -->
+                            <form class="form-subscribe" id="contactForm" action="https://formspree.io/f/xdobkqgj" method="POST">
                                 <!-- Email address input-->
                                 <div class="row">
                                     <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Correo Electronico" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Correo Electronico" data-sb-validations="required,email" name="_replyto" />
+                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required" name="message">Email Address is required.</div>
+                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email" name="message">Email Address Email is not valid.</div>
                                     </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Quiero unirme!</button></div>
+                                    <div class="col-auto"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Quiero unirme!</button></div>
                                 </div>
                                 <!-- Submit success message-->
                                 <!---->
@@ -55,16 +53,15 @@
                                 <!-- has successfully submitted-->
                                 <div class="d-none" id="submitSuccessMessage">
                                     <div class="text-center mb-3">
-                                        <div class="fw-bolder">Pronto nos pondremos en contacto contigo!</div>
-                                        <p>Si te queda alguna duda, ponte en contacto al info@mail.com</p>
-                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                        <div class="fw-bolder" name="message">Pronto nos pondremos en contacto contigo!</div>
+                                        <p name="message">Si te queda alguna duda, ponte en contacto al info@mail.com</p>
                                     </div>
                                 </div>
                                 <!-- Submit error message-->
                                 <!---->
                                 <!-- This is what your users will see when there is-->
                                 <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error! Tu registro no pudo ser completado</div></div>
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3" name="message">Error! Tu registro no pudo ser completado</div></div>
                             </form>
                         </div>
                     </div>
@@ -80,7 +77,7 @@
                             <!--<div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>-->
                             <div class="features-icons-icon d-flex"><img class="rounded mx-auto d-block" alt="Responsive image" src="https://img.icons8.com/doodle/96/000000/small-business--v1.png"/></div>
                             <h3>Negocios</h3>
-                            <p class="lead mb-0">Optimizamos las finanzas corporativas de tu compañia.
+                            <p class="lead mb-0">Optimizamos las finanzas corporativas de tu negocio.
                                 Mejoramos tu estrategia de precios.
                                 Aumentamos tus ingresos con la creacion de mayores canales de ventas.</p>
                         </div>
@@ -195,15 +192,17 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                        <!--<form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">-->
+                        <form class="form-subscribe" id="contactFormFooter" action="https://formspree.io/f/xdobkqgj" method="POST">
+
                             <!-- Email address input-->
                             <div class="row">
                                 <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Ingresa tu correo electronico</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Correo electronico no valido</div>
+                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" name="_replyto"/>
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required" name="_replyto">Ingresa tu correo electronico</div>
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email" name="message">Correo electronico no valido</div>
                                 </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Ingresa</button></div>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Ingresa</button></div>
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -211,16 +210,15 @@
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Ingreso exitoso!</div>
+                                    <div class="fw-bolder" name="message">Ingreso exitoso!</div>
                                     <p>Activa tu formulario</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
                             <!---->
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error!</div></div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3" name="message">Error!</div></div>
                         </form>
                     </div>
                 </div>
@@ -234,12 +232,11 @@
                         <ul class="list-inline mb-2">
                             <a href="index.html" ><li class="list-inline-item">Inicio</li></a>
                             <a href="./pages/acerca_de_nosotros.html" target="_blank"><li class="list-inline-item">Acerca de nosotros</li></a>
-                            <a href="./pages/productos.html" target="_blank"><li class="list-inline-item">Productos</li></a>
                             <a href="./pages/cotizaciones.html" target="_blank"><li class="list-inline-item">Cotizaciones</li></a>
                             <a href="./pages/ayuda.html" target="_blank"><li class="list-inline-item">Ayuda</li></a>
                             <a href="./pages/contactanos.html" target="_blank"><li class="list-inline-item">Contactanos</li></a>
                         </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2021. All Rights Reserved.</p>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; DigitalHikeUp 2021. All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                         <ul class="list-inline mb-0">
@@ -261,10 +258,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
